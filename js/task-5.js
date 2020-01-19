@@ -27,4 +27,8 @@ switch (normalizedUserPlace) {
     alert('В вашей стране доставка не доступна');
 }
 
-console.log(`Доставка в ${normalizedUserPlace} будет стоить ${price} кредитов`);
+if (price > 0) {
+  console.log(
+    `Доставка в ${normalizedUserPlace} будет стоить ${price} кредитов`,
+  );
+}
